@@ -1,20 +1,47 @@
 #include <stdio.h>
+#include <string.h>
 
-int main() {
+int main(int argc, char *argv[]) {
+    char *msg_input;
+    char *msg_err_input;
+    char *msg_err_positive;
+    char *msg_header;
+    char *msg_final;
+
+    if (argc > 1 && strcmp(argv[1], "--en") == 0) {
+        msg_input = "Enter a positive number n: ";
+        msg_err_input = "Input error! Please enter an integer.\n";
+        msg_err_positive = "Error: Collatz conjecture is only defined for positive numbers!\n";
+        msg_header = "Sequence for %lld:\n";
+        msg_final = "\nSequence completed in %d steps.\n";
+    } else if (argc > 1 && strcmp(argv[1], "--ru") == 0) {
+        msg_input = "Введите положительное число n: ";
+        msg_err_input = "Ошибка ввода! Пожалуйста, введите целое число.\n";
+        msg_err_positive = "Ошибка: Гипотеза Коллатца определена только для положительных чисел!\n";
+        msg_header = "Последовательность для %lld:\n";
+        msg_final = "\nПоследовательность завершена за %d шагов.\n";
+      } else {
+        msg_input = "Enter a positive number n: ";
+        msg_err_input = "Input error! Please enter an integer.\n";
+        msg_err_positive = "Error: Collatz conjecture is only defined for positive numbers!\n";
+        msg_header = "Sequence for %lld:\n";
+        msg_final = "\nSequence completed in %d steps.\n";
+      }
+
     long long n;
     
-    printf("Введите положительное число n: ");
+    printf(msg_input);
     
     if (scanf("%lld", &n) != 1) {
-        printf("Ошибка ввода! Пожалуйста, введите целое число.\n");
+        printf(msg_err_input);
         return 1;
     }
 
     if (n <= 0) {
-        printf("Ошибка: Гипотеза Коллатца определена только для положительных чисел!\n");
+        printf(msg_err_positive);
     } else {
         int count = 0;
-        printf("Последовательность для %lld:\n", n);
+        printf(msg_header, n);
 
         while (n != 1) {
             int even = n % 2 == 0;
@@ -39,7 +66,7 @@ int main() {
             count++;
         }
 
-        printf("\nПоследовательность завершена за %d шагов.\n", count);
+        printf(msg_final, count);
     }
 
     return 0;
