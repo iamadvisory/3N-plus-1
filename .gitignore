@@ -1,0 +1,5 @@
+releases/
+beta/
+*.exe
+bin-linux
+.vscode/
