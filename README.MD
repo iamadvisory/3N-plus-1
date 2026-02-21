@@ -2,7 +2,8 @@
 
 Простая программа на C для визуализации гипотезы Коллатца.
 A simple C program to visualize the Collatz conjecture.
-Launch & Languages / Запуск и языки
+
+# Launch & Languages / Запуск и языки
 
 По умолчанию программа запускается на английском языке. Вы можете выбрать язык с помощью флагов командной строки:
 By default, the program starts in English. You can select the language using command-line flags:
