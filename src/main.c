@@ -8,7 +8,6 @@ int main(int argc, char *argv[]) {
     char *msg_header;
     char *msg_final;
 
-    // Выбор языка (теперь с явным --ru и --en)
     if (argc > 1 && strcmp(argv[1], "--ru") == 0) {
         msg_input = "Введите положительное число n: ";
         msg_err_input = "Ошибка ввода! Пожалуйста, введите целое число.\n";
