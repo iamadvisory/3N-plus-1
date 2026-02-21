@@ -44,7 +44,7 @@ int main(int argc, char *argv[]) {
             } else {
                 n = n * 3 + 1;
             }
-
+            
             int is_even = (n % 2 == 0);
             char *color_code = is_even ? "\033[1;34m" : "\033[1;31m";
 
