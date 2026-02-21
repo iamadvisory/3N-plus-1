@@ -8,13 +8,7 @@ int main(int argc, char *argv[]) {
     char *msg_header;
     char *msg_final;
 
-    if (argc > 1 && strcmp(argv[1], "--en") == 0) {
-        msg_input = "Enter a positive number n: ";
-        msg_err_input = "Input error! Please enter an integer.\n";
-        msg_err_positive = "Error: Collatz conjecture is only defined for positive numbers!\n";
-        msg_header = "Sequence for %lld:\n";
-        msg_final = "\nSequence completed in %d steps.\n";
-    } else if (argc > 1 && strcmp(argv[1], "--ru") == 0) {
+      if (argc > 1 && strcmp(argv[1], "--ru") == 0) {
         msg_input = "Введите положительное число n: ";
         msg_err_input = "Ошибка ввода! Пожалуйста, введите целое число.\n";
         msg_err_positive = "Ошибка: Гипотеза Коллатца определена только для положительных чисел!\n";

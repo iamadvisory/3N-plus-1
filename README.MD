@@ -19,8 +19,8 @@ By default, the program starts in English. You can select the language using com
 
 # Build / Сборка
 
-Вы можете найти готовые файлы в папке /releases или скомпилировать исходный код самостоятельно:
-You can find pre-built binaries in the /releases folder or compile the source code yourself:
+Вы можете найти готовые файлы в releases или скомпилировать исходный код самостоятельно:
+You can find pre-built binaries in the releases or compile the source code yourself:
 bash:
 
 gcc scr/main.c -o 3N+1
