@@ -1,20 +1,25 @@
-# 3N+1
+# 3N+1 Visualizer
 
-A simple C program to visualize the Collatz conjecture.
-
-# Visualization
-
-Even numbers are represented by blue '*' symbols, while odd numbers are shown in red.
-
-# Getting Started
-
-In the /3N+1/releases directory, you will find stable binary executables for Linux and a .exe file for Windows. The source code is located in /3N+1/src/ and can be compiled using gcc or Clang.
-
-# 3N+1
 Простая программа на C для визуализации гипотезы Коллатца.
+A simple C program to visualize the Collatz conjecture.
+Launch & Languages / Запуск и языки
 
-# График
-Синими знаками '*' обозначаются четные числа в графике, красными - нечетные.
+По умолчанию программа запускается на английском языке. Вы можете выбрать язык с помощью флагов командной строки:
+By default, the program starts in English. You can select the language using command-line flags:
 
-# Запуск
-В /3N+1/realeses есть стабильный, бинарный, исполняемый файл для Linux и исполняемый ".exe" файл для Windows, а так же исходный код в /3N+1/scr/, который вы можете скомпилировать с помощью gcc или Clang. 
+    Russian: ./3N+1 --ru
+
+    English: ./3N+1 --en 
+
+# Visualization / График
+
+    Russian: Синими знаками '*' обозначаются четные числа, красными — нечетные.
+
+    English: Even numbers are represented by blue '*' symbols, while odd numbers are shown in red.
+
+# Build / Сборка
+
+Вы можете найти готовые файлы в папке /releases или скомпилировать исходный код самостоятельно:
+You can find pre-built binaries in the /releases folder or compile the source code yourself:
+
+gcc scr/main.c -o 3N+1
