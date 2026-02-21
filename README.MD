@@ -21,6 +21,9 @@ By default, the program starts in English. You can select the language using com
 
 Вы можете найти готовые файлы в releases или скомпилировать исходный код самостоятельно:
 You can find pre-built binaries in the releases or compile the source code yourself:
+<<<<<<< HEAD
 bash:
+=======
+>>>>>>> def21a2fb9ad04cba9c7c4a90429ec443238c945
 
 gcc scr/main.c -o 3N+1
